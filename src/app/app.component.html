@@ -1,6 +1,6 @@
-<h2></h2>
+<h2>LIST OF MESSAGES</h2>
 <ol>
-<li *ngFor="let message of messages">
+<li *ngFor="let message of messages | async">
   {{message.message}}
 </li>
 </ol>

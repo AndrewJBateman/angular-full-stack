@@ -1,6 +1,7 @@
 {
   "name": "angular-full-stack",
   "version": "0.0.0",
+  "repository": "https://github.com/AndrewJBateman/angular-full-stack",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,10 +9,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "server": "concurrently \"ng serve\" \"server/node_modules/.bin/ts-node-dev server/server.ts\""
+    "serve": "concurrently \"ng serve\" \"server/node_modules/.bin/ts-node-dev server/server.ts\""
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/build-angular": "^0.13.8",
     "@angular/animations": "~7.0.0",
     "@angular/common": "~7.0.0",
     "@angular/compiler": "~7.0.0",
@@ -24,16 +26,16 @@
     "concurrently": "^4.1.0",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
+    "tar": "^4.4.8",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.10.0",
-    "@angular/cli": "~7.0.6",
-    "@angular/compiler-cli": "~7.0.0",
+    "@angular/cli": "^7.3.8",
+    "@angular/compiler-cli": "^7.2.12",
     "@angular/language-service": "~7.0.0",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
