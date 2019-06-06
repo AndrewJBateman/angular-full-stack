@@ -93,6 +93,8 @@ app.listen(port, '127.0.0.1', () => {
 
 * [Stephen Fluin: Demos with Angular blog post](https://fluin.io/blog/adding-node-typescript-to-angular-app)
 
+* [Medium Article by Stephen Fluin: Adding a Node + Typescript Backend to Your Angular App](https://medium.com/@stephenfluin/adding-a-node-typescript-backend-to-your-angular-app-29b0e9925ff)
+
 ## Contact
 
 Created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!

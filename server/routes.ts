@@ -1,8 +1,7 @@
 import express from 'express';
-const app = express.Router();
 
-export { app as routes };
+export const routes = express.Router();
 
-app.get('/', (req, res) => res.send('Hello world'));
-app.get('/users', (req, res) => res.send([]));
-app.post('/users', (req, res) => res.send({body: req.body}));
+routes.get('/', (req, res) => res.send({hello: 'world'}));
+routes.get('/users', (req, res) => res.send([]));
+routes.post('/users', (req, res) => res.send({body: req.body}));
