@@ -18,7 +18,7 @@
 ## :books: General info
 
 * The server is live within the Angular app directory and is written in Typescript. it was created in a root-level folder called `/server`.
-* A json package was created then dependencies (`ts-node ts-node-dev tslint typescript express @types/express`) were added.
+* A json package was created, then the dependencies (`ts-node ts-node-dev tslint typescript express @types/express`) were added.
 * A tsconfig.json file was created so the server could have its own typescript configuration.
 * An express server was created.
 
@@ -28,7 +28,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v7](https://angular.io/) & [Angular CLI v7.3.8](https://cli.angular.io/).
+* [Angular v8](https://angular.io/) & [Angular CLI v8](https://cli.angular.io/).
 * [RxJS Library v6](https://angular.io/guide/rx-library) used to handle datastreams and propagation of change using observables.
 * [Concurrently](https://www.npmjs.com/package/concurrently) npm dependency used to run multiple commands concurrently.
 
@@ -89,6 +89,10 @@ app.listen(port, '127.0.0.1', () => {
 * [Stephen Fluin: Demos with Angular blog post](https://fluin.io/blog/adding-node-typescript-to-angular-app)
 * [Medium Article by Stephen Fluin: Adding a Node + Typescript Backend to Your Angular App](https://medium.com/@stephenfluin/adding-a-node-typescript-backend-to-your-angular-app-29b0e9925ff)
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
