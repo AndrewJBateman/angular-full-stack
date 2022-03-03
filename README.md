@@ -6,36 +6,41 @@
 
 ## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [:zap: Angular Tailwind RATP](#zap-angular-full-stack)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:wrench: Testing](#wrench-testing)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:file_folder: License](#file_folder-license)
+  * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
 
 * The server is live within the Angular app directory and is written in Typescript. it was created in a root-level folder called `/server`.
-* A json package was created, then the dependencies (`ts-node ts-node-dev tslint typescript express @types/express`) were added.
-* A tsconfig.json file was created so the server could have its own typescript configuration.
-* An express server was created.
+* A JSON package was created, then the dependencies (`ts-node ts-node-dev tslint typescript express @types/express`) were added.
+* A `tsconfig.json` file was created so the server could have its own typescript configuration for the express server.
+* `http://localhost:4200/users` displays a users list observable using the Angular async pipe
 
 ## :camera: Screenshots
 
-![Example screenshot](./img/client-and-server.png).
+![Example screenshot](./img/users.png).
 
 ## :signal_strength: Technologies
 
-* [Angular v8](https://angular.io/) & [Angular CLI v8](https://cli.angular.io/).
-* [RxJS Library v6](https://angular.io/guide/rx-library) used to handle datastreams and propagation of change using observables.
-* [Concurrently](https://www.npmjs.com/package/concurrently) npm dependency used to run multiple commands concurrently.
+* [Angular v13](https://angular.io/)
+* [RxJS Library v7](https://angular.io/guide/rx-library) used to handle datastreams and propagation of change using observables.
+* [Concurrently v7](https://www.npmjs.com/package/concurrently) npm dependency used to run multiple commands concurrently.
 
 ## :floppy_disk: Setup
 
-* **To run server only:**  cd to \server then type `npm run serve` to start server & navigate to `http://localhost:4201/`
-* **To run front & backend concurrently:** from root level type `ng serve` then navigate to `http://localhost:4200/` & `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* `npm i` && `cd server && npm i` to install dependencies for front & backends
+* **To run front & backend concurrently:** from root level type `npm run serve` then navigate to `http://localhost:4200/` & `http://localhost:4201/`. The app will automatically reload if you change any of the source files.
 
 ## :computer: Code Examples
 
@@ -80,8 +85,8 @@ app.listen(port, '127.0.0.1', () => {
 
 ## :clipboard: Status & To-Do List
 
-* Status: Part working - a post request to `http://localhost:4201/users/` is echoed back, as can be seen using the Chrome Dev Tools Network - Name (users). The single command to start both frontend and backend does not work. I started each one separately.
-* To-Do: Fix concurrently command.
+* Status: Working
+* To-Do: Nothing
 
 ## :clap: Inspiration
 
