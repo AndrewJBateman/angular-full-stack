@@ -9,14 +9,11 @@ import { User } from './user';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-
 export class AppComponent {
   users: Observable<User[]>;
 
   constructor(private http: HttpClient) {
-    this.users = this.http.get<User[]>(
-      'http://localhost:4201/users'
-    );
+    this.users = this.http.get<User[]>('http://localhost:4201/users');
     console.log(
       'messages: ',
       this.users.subscribe((x: any) => console.log(x))
