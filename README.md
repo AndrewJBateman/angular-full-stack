@@ -6,13 +6,12 @@
 
 ## :page_facing_up: Table of contents
 
-* [:zap: Angular Tailwind RATP](#zap-angular-full-stack)
+* [:zap: Angular Full-Stack](#zap-angular-full-stack)
   * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
   * [:signal_strength: Technologies](#signal_strength-technologies)
   * [:floppy_disk: Setup](#floppy_disk-setup)
-  * [:wrench: Testing](#wrench-testing)
   * [:computer: Code Examples](#computer-code-examples)
   * [:cool: Features](#cool-features)
   * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
@@ -22,7 +21,7 @@
 
 ## :books: General info
 
-* The server is live within the Angular app directory and is written in Typescript. it was created in a root-level folder called `/server`.
+* The server is live within the Angular app directory and is written in Typescript, in root-level folder `/server`.
 * A JSON package was created, then the dependencies (`ts-node ts-node-dev tslint typescript express @types/express`) were added.
 * A `tsconfig.json` file was created so the server could have its own typescript configuration for the express server.
 * `http://localhost:4200/users` displays a users list observable using the Angular async pipe
@@ -33,14 +32,14 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v13](https://angular.io/)
+* [Angular v14](https://angular.io/)
 * [RxJS Library v7](https://angular.io/guide/rx-library) used to handle datastreams and propagation of change using observables.
 * [Concurrently v7](https://www.npmjs.com/package/concurrently) npm dependency used to run multiple commands concurrently.
 
 ## :floppy_disk: Setup
 
 * `npm i` && `cd server && npm i` to install dependencies for front & backends
-* **To run front & backend concurrently:** from root level type `npm run serve` then navigate to `http://localhost:4200/` & `http://localhost:4201/`. The app will automatically reload if you change any of the source files.
+* **To run front & backend concurrently:** from root level type `npm run serve` then navigate to `http://localhost:4200/` & `http://localhost:4201/users`. The app will automatically reload if you change any of the source files.
 
 ## :computer: Code Examples
 
