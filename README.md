@@ -32,9 +32,9 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v15](https://angular.io/)
+* [Angular v16](https://angular.io/)
 * [RxJS Library v7](https://angular.io/guide/rx-library) used to handle datastreams and propagation of change using observables.
-* [Concurrently v7](https://www.npmjs.com/package/concurrently) npm dependency used to run multiple commands concurrently.
+* [Concurrently v8](https://www.npmjs.com/package/concurrently) npm dependency used to run multiple commands concurrently.
 
 ## :floppy_disk: Setup
 
@@ -84,8 +84,8 @@ app.listen(port, '127.0.0.1', () => {
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working
-* To-Do: Nothing
+* Status: Working. Post does not add data to users array, possible CORS issue.
+* To-Do: refresh users cards when new user added.
 
 ## :clap: Inspiration
 
@@ -99,4 +99,4 @@ app.listen(port, '127.0.0.1', () => {
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: `gomezbateman@yahoo.com`
