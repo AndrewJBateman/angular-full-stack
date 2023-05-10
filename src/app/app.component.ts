@@ -10,14 +10,10 @@ import { User } from './user';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  users: Observable<User[]>;
+  users: Observable<User[]> = new Observable<User[]>;
 
   constructor(private http: HttpClient) {
-    this.users = this.http.get<User[]>('http://localhost:4201/users');
-    console.log(
-      'messages: ',
-      this.users.subscribe((x: any) => console.log(x))
-    );
+    this.getUsers();
   }
 
   post() {
@@ -28,5 +24,13 @@ export class AppComponent {
         rights: ['admin', 'writer'],
       })
       .subscribe((next) => console.log('new user:', next));
+  }
+
+  getUsers() {
+    this.users = this.http.get<User[]>('http://localhost:4201/users');
+    console.log(
+      'messages: ',
+      this.users.subscribe((x: any) => console.log(x))
+    );
   }
 }
